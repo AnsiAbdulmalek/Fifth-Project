@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PACKGROUND</title>
+  <style>
+    *{
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-image: url(Backgroundimage2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h2{
+      font-size: 45px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .navbar ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      font-size: 20px;
+      position: relative;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .navbar ul li::after{
+      content: '';
+      height: 2.5px;
+      width: 0;
+      background: #009688;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+      width: 100%;
+    }
+    .content{
+      width: 100%;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+    }
+    .content h1{
+      font-size: 60px;
+      margin-top: 70px;
+    }
+    .content p{
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+    }
+    button{
+      width: 200px;
+      padding: 15px 0;
+      text-align: center;
+      cursor: pointer;
+      margin: 20px 10px;
+      border-radius: 25px;
+      font-weight: bold;
+      border: 2px solid #009688;
+      background: transparent;
+      color: #fff;
+      top: 50px;
+      position: relative;
+      overflow: hidden;
+    }
+    span{
+      background: #009688;
+      height: 100%;
+      width: 0;
+      border-radius: 25px; 
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: 0.5s;
+    }
+    button:hover span{
+      width: 100%;
+    }
+    button:hover{
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <audio src="021. Zach Bryan - Something in the Orange.mp3" autoplay="autoplay" hidden="hidden"></audio>
+  <div class="navbar">
+    <h2>!Nterior</h2>
+  <!-- <img class="logo" src="" alt="logo"> -->
+  <ul>
+    <li><a href="#">about us</a></li>
+    <li><a href="#">contact us</a></li>
+    <li><a href="#">visit us</a></li>
+    <li><a href="#">advise us</a></li>
+  </ul>
+  </div>
+  <div class="content">
+    <h1>CONECT WITH US</h1>
+    <P>The Sooner You Call Us The Better You Get Discount.</P>
+    <div>
+      <button type="button"><span></span>CALL US</button>
+      <button type="button"><span></span>WATCH MORE</button>
+    </div>
+  </div>
+</body>
+</html>
